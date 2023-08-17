@@ -8,27 +8,26 @@
 import SwiftUI
 
 struct WriteSecondView: View {
-    @Binding var color : String
-    @State var font = ""
-    @State var stamp = ""
+    @Binding var letterItems : [LetterItem]
+    @Binding var index : Int
     var body: some View {
         ZStack() {
-            if color == "pink" {
+            if letterItems[index].color == "pink" {
                 Color(red: 0.941, green: 0.897, blue: 0.923)
                     .ignoresSafeArea()
-            } else if color == "green" {
+            } else if letterItems[index].color == "green" {
                 Color(red: 0.816, green: 0.957, blue: 0.768)
                     .ignoresSafeArea()
-            } else if color == "blue" {
+            } else if letterItems[index].color == "blue" {
                 Color(red: 0.752, green: 0.915, blue: 0.989)
                     .ignoresSafeArea()
-            } else if color == "yellow" {
+            } else if letterItems[index].color == "yellow" {
                 Color(red: 0.983, green: 0.988, blue: 0.604)
                     .ignoresSafeArea()
-            } else if color == "orange" {
+            } else if letterItems[index].color == "orange" {
                 Color(red: 1.0, green: 0.853, blue: 0.703)
                     .ignoresSafeArea()
-            } else if color == "purple" {
+            } else if letterItems[index].color == "purple" {
                 Color(red: 0.836, green: 0.831, blue: 0.896)
                     .ignoresSafeArea()
             }
@@ -55,7 +54,7 @@ struct WriteSecondView: View {
                         .font(.largeTitle)
                         .font(.system(size: 35))
                     HStack() {
-                        NavigationLink(destination: WriteThirdView()) {
+                        NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -63,9 +62,9 @@ struct WriteSecondView: View {
                                 .frame(width: 110)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            font = "font1"
+                            //font = "font1"
                         })
-                        NavigationLink(destination: WriteThirdView()) {
+                        NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -73,11 +72,11 @@ struct WriteSecondView: View {
                                 .frame(width: 110)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            font = "font2"
+                            //font = "font2"
                         })
                     }
                     HStack() {
-                        NavigationLink(destination: WriteThirdView()) {
+                        NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -85,9 +84,9 @@ struct WriteSecondView: View {
                                 .frame(width: 110)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            font = "font3"
+                            //font = "font3"
                         })
-                        NavigationLink(destination: WriteThirdView()) {
+                        NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -95,7 +94,7 @@ struct WriteSecondView: View {
                                 .frame(width: 110)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            font = "font4"
+                            //font = "font4"
                         })
                     }
                     // stamps
@@ -104,7 +103,7 @@ struct WriteSecondView: View {
                         .font(.system(size: 35))
                         .padding(.top, 40.0)
                     HStack() {
-                        NavigationLink(destination: WriteThirdView()) {
+                        NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -112,9 +111,9 @@ struct WriteSecondView: View {
                                 .frame(width: 110)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            stamp = "stamp1"
+                            //stamp = "stamp1"
                         })
-                        NavigationLink(destination: WriteThirdView()) {
+                        NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -122,11 +121,11 @@ struct WriteSecondView: View {
                                 .frame(width: 110)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            stamp = "stamp2"
+                            //stamp = "stamp2"
                         })
                     }
                     HStack() {
-                        NavigationLink(destination: WriteThirdView()) {
+                        NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -134,9 +133,9 @@ struct WriteSecondView: View {
                                 .frame(width: 110)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            stamp = "stamp3"
+                            //stamp = "stamp3"
                         })
-                        NavigationLink(destination: WriteThirdView()) {
+                        NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -144,7 +143,7 @@ struct WriteSecondView: View {
                                 .frame(width: 110)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            stamp = "stamp4"
+                            //stamp = "stamp4"
                         })
                     }
                     Spacer()
@@ -156,6 +155,6 @@ struct WriteSecondView: View {
 
 struct WriteSecondView_Previews: PreviewProvider {
     static var previews: some View {
-        WriteSecondView(color: .constant(""))
+        WriteSecondView(letterItems: .constant([]), index: .constant(0))
     }
 }

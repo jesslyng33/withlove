@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct WriteView: View {
-    @State var color = ""
+    @Binding var letterItems : [LetterItem]
+    @Binding var index : Int
     var body: some View {
         NavigationStack() {
             ZStack() {
@@ -27,7 +28,7 @@ struct WriteView: View {
                     // setting the placement for images (That are letters)
                     HStack() {
                         // letters link to WriteSecondView page
-                        NavigationLink(destination: WriteSecondView(color: $color)) {
+                        NavigationLink(destination: WriteSecondView(letterItems: $letterItems, index: $index)) {
                             // pink
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
@@ -35,9 +36,9 @@ struct WriteView: View {
                                 .padding()
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            color = "pink"
+                            letterItems[index].color = "pink"
                         })
-                        NavigationLink(destination: WriteSecondView(color: $color)) {
+                        NavigationLink(destination: WriteSecondView(letterItems: $letterItems, index: $index)) {
                             // green
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
@@ -45,11 +46,11 @@ struct WriteView: View {
                                 .padding()
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            color = "green"
+                            letterItems[index].color = "green"
                         })
                     }
                     HStack() {
-                        NavigationLink(destination: WriteSecondView(color: $color)) {
+                        NavigationLink(destination: WriteSecondView(letterItems: $letterItems, index: $index)) {
                             // blue
                             Image("lettericon")
                               .resizable(resizingMode: .stretch)
@@ -57,9 +58,9 @@ struct WriteView: View {
                               .padding()
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            color = "blue"
+                            letterItems[index].color = "blue"
                         })
-                        NavigationLink(destination: WriteSecondView(color: $color)) {
+                        NavigationLink(destination: WriteSecondView(letterItems: $letterItems, index: $index)) {
                             // yellow
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
@@ -67,11 +68,11 @@ struct WriteView: View {
                                 .padding()
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            color = "yellow"
+                            letterItems[index].color = "yellow"
                         })
                     }
                     HStack() {
-                        NavigationLink(destination: WriteSecondView(color: $color)) {
+                        NavigationLink(destination: WriteSecondView(letterItems: $letterItems, index: $index)) {
                             // orange
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
@@ -79,9 +80,9 @@ struct WriteView: View {
                                 .padding()
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            color = "orange"
+                            letterItems[index].color = "orange"
                         })
-                        NavigationLink(destination: WriteSecondView(color: $color)) {
+                        NavigationLink(destination: WriteSecondView(letterItems: $letterItems, index: $index)) {
                             // purple
                             Image("lettericon")
                                 .resizable(resizingMode:    .stretch)
@@ -89,7 +90,7 @@ struct WriteView: View {
                                 .padding()
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            color = "purple"
+                            letterItems[index].color = "purple"
                         })
                   }
                   Spacer()
@@ -101,6 +102,6 @@ struct WriteView: View {
 
 struct WriteView_Previews: PreviewProvider {
     static var previews: some View {
-        WriteView()
+        WriteView(letterItems: .constant([]), index: .constant(0))
     }
 }

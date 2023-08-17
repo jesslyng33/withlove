@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct MyLettersView: View {
+    @Binding var letterItems : [LetterItem]
+    @Binding var index : Int
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack() {
+            Text("My Letters")
+            List {
+                ForEach(letterItems) { LetterItem in
+                    Text(LetterItem.color)
+                    Text(LetterItem.prompt)
+                    Text(LetterItem.content)
+                }
+            }
+            .listStyle(.plain)
+        }
     }
 }
 
 struct MyLettersView_Previews: PreviewProvider {
     static var previews: some View {
-        MyLettersView()
+        MyLettersView(letterItems: .constant([]), index: .constant(0))
     }
 }

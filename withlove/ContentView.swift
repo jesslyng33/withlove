@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var letterItems: [LetterItem] = []
+    @State var index = -1
     var body: some View {
         NavigationStack() {
             ZStack {
@@ -46,7 +48,7 @@ struct ContentView: View {
                             }
                         }
                         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                        NavigationLink(destination: WriteView()) {
+                        NavigationLink(destination: WriteView(letterItems: $letterItems, index: $index)) {
                             VStack() {
                                 Image("lettericon")
                                     .resizable(resizingMode: .stretch)
@@ -55,9 +57,13 @@ struct ContentView: View {
                                 Text("Write")
                             }
                         }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            self.addLetter(color: "", prompt: "", content: "")
+                            index = index+1
+                        })
                         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     }
-                    NavigationLink(destination: MyLettersView()) {
+                    NavigationLink(destination: MyLettersView(letterItems: $letterItems, index: $index)) {
                         VStack() {
                             Image("lettericon")
                                 .resizable(resizingMode: .stretch)
@@ -73,8 +79,11 @@ struct ContentView: View {
             }
         }
     }
+    private func addLetter(color: String, prompt: String, content: String) {
+        let letter = LetterItem(color: color, prompt: prompt, content: content)
+            letterItems.append(letter)
+    }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
