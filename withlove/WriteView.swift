@@ -13,37 +13,54 @@ struct WriteView: View {
     var body: some View {
         NavigationStack() {
             ZStack() {
-                Color(red: 0.996, green: 0.976, blue: 0.92)
+                Color(hue: 1.0, saturation: 0.034, brightness: 0.974)
                     .ignoresSafeArea()
                 VStack() {
-                    // separates title and top of screen
-                    Spacer()
-                        .frame(height: 51.0);
+                    HStack() {
+                        Spacer()
+                        NavigationLink(destination: ContentView()) {
+                            VStack(alignment: .center) {
+                                Image("homeheart")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.trailing, 20.0)
+                                    .frame(width: 60)
+                                Text("home")
+                                    .foregroundColor(Color(red: 0.907, green: 0.56, blue: 0.556))
+                                    .padding(.trailing, 20.0)
+                                    .font(Font.custom("Starla", size: 17))
+                            }
+                        }
+                    }
                     // main title, seen on the very top
-                    Text("Customize your letter. . . ")
-                        .font(.system(size: 34))
-                        .frame(height: 20.0)
-                        .frame(height: 5.0);
+                    Text("customize your letter color!")
+                        .font(Font.custom("Starla", size: 40))
+                        .foregroundColor(Color(red: 0.907, green: 0.56, blue: 0.556))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
                     Spacer();
                     // setting the placement for images (That are letters)
                     HStack() {
                         // letters link to WriteSecondView page
                         NavigationLink(destination: WriteSecondView(letterItems: $letterItems, index: $index)) {
                             // pink
-                            Image("lettericon")
+                            Image("pinkletter")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
-                                .padding()
+                                .padding(.vertical, 40.0)
+                                .frame(width: 150.0)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
                             letterItems[index].color = "pink"
                         })
                         NavigationLink(destination: WriteSecondView(letterItems: $letterItems, index: $index)) {
                             // green
-                            Image("lettericon")
+                            Image("greenletter")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
-                                .padding()
+                                .frame(width: 150.0)
+                                .padding(.vertical, 40.0)
+                                .padding(.leading, 20)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
                             letterItems[index].color = "green"
@@ -52,20 +69,23 @@ struct WriteView: View {
                     HStack() {
                         NavigationLink(destination: WriteSecondView(letterItems: $letterItems, index: $index)) {
                             // blue
-                            Image("lettericon")
-                              .resizable(resizingMode: .stretch)
-                              .aspectRatio(contentMode: .fit)
-                              .padding()
+                            Image("blueletter")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 150.0)
+                                .padding(.vertical, 40.0)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
                             letterItems[index].color = "blue"
                         })
                         NavigationLink(destination: WriteSecondView(letterItems: $letterItems, index: $index)) {
                             // yellow
-                            Image("lettericon")
+                            Image("yellowletter")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
-                                .padding()
+                                .frame(width: 150.0)
+                                .padding(.vertical, 40.0)
+                                .padding(.leading, 20)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
                             letterItems[index].color = "yellow"
@@ -74,20 +94,23 @@ struct WriteView: View {
                     HStack() {
                         NavigationLink(destination: WriteSecondView(letterItems: $letterItems, index: $index)) {
                             // orange
-                            Image("lettericon")
+                            Image("orangeletter")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
-                                .padding()
+                                .frame(width: 150.0)
+                                .padding(.vertical, 40.0)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
                             letterItems[index].color = "orange"
                         })
                         NavigationLink(destination: WriteSecondView(letterItems: $letterItems, index: $index)) {
                             // purple
-                            Image("lettericon")
-                                .resizable(resizingMode:    .stretch)
+                            Image("purpleletter")
+                                .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
-                                .padding()
+                                .frame(width: 150.0)
+                                .padding(.vertical, 40.0)
+                                .padding(.leading, 20)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
                             letterItems[index].color = "purple"

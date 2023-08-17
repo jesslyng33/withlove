@@ -14,16 +14,24 @@
 		BD1367B02A8AB66D004DA374 /* withloveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1367AF2A8AB66D004DA374 /* withloveTests.swift */; };
 		BD1367BA2A8AB66D004DA374 /* withloveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1367B92A8AB66D004DA374 /* withloveUITests.swift */; };
 		BD1367BC2A8AB66D004DA374 /* withloveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1367BB2A8AB66D004DA374 /* withloveUITestsLaunchTests.swift */; };
+		BD36EA5E2A8E6BDA0044BEA2 /* Starla.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD36EA5D2A8E6BD90044BEA2 /* Starla.otf */; };
+		BD36EA612A8E73270044BEA2 /* Stefiont-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD36EA602A8E73270044BEA2 /* Stefiont-Regular.otf */; };
+		BD36EA652A8E73A90044BEA2 /* Sansilk.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD36EA642A8E73A90044BEA2 /* Sansilk.otf */; };
+		BD36EA672A8E73FC0044BEA2 /* Dufanthe.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD36EA662A8E73FC0044BEA2 /* Dufanthe.otf */; };
+		BD36EA692A8E74980044BEA2 /* Farmhouse Children.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD36EA682A8E74980044BEA2 /* Farmhouse Children.otf */; };
+		BD36EA6B2A8E75270044BEA2 /* Curlings.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD36EA6A2A8E75270044BEA2 /* Curlings.ttf */; };
 		BD58F9F62A8D4F1100BB73DD /* LetterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58F9F52A8D4F1100BB73DD /* LetterItem.swift */; };
 		BD7177C12A8BD5FB0048B6E9 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7177C02A8BD5FB0048B6E9 /* WriteView.swift */; };
 		BD7177C32A8BD6060048B6E9 /* MyLettersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7177C22A8BD6060048B6E9 /* MyLettersView.swift */; };
 		BD7177C52A8BD6100048B6E9 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7177C42A8BD6100048B6E9 /* AboutUsView.swift */; };
 		BD7177C72A8BD85D0048B6E9 /* WriteSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7177C62A8BD85D0048B6E9 /* WriteSecondView.swift */; };
+		BD7A6D002A8E77F6000263E4 /* NeverMindHandwriting-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD7A6CFF2A8E77F6000263E4 /* NeverMindHandwriting-Regular.ttf */; };
 		BD9142B32A8BD19D00F62896 /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9142B22A8BD19D00F62896 /* ReadView.swift */; };
 		BDAE19BD2A8D12B000BD22B7 /* LetterOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAE19BC2A8D12B000BD22B7 /* LetterOneView.swift */; };
 		BDAE19BF2A8D12BC00BD22B7 /* LetterTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAE19BE2A8D12BC00BD22B7 /* LetterTwoView.swift */; };
 		BDAE19C12A8D150300BD22B7 /* LetterThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAE19C02A8D150300BD22B7 /* LetterThreeView.swift */; };
 		BDB7867D2A8C0A7A0059397A /* WriteThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7867C2A8C0A7A0059397A /* WriteThirdView.swift */; };
+		BDC619342A8EA42900703E76 /* WrittenLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC619332A8EA42900703E76 /* WrittenLetterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,16 +62,25 @@
 		BD1367B52A8AB66D004DA374 /* withloveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = withloveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1367B92A8AB66D004DA374 /* withloveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withloveUITests.swift; sourceTree = "<group>"; };
 		BD1367BB2A8AB66D004DA374 /* withloveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withloveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD36EA5D2A8E6BD90044BEA2 /* Starla.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Starla.otf; path = ../../../Downloads/starla/Starla.otf; sourceTree = "<group>"; };
+		BD36EA5F2A8E6BEE0044BEA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BD36EA602A8E73270044BEA2 /* Stefiont-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Stefiont-Regular.otf"; path = "../../../Downloads/stefiont/Stefiont-Regular.otf"; sourceTree = "<group>"; };
+		BD36EA642A8E73A90044BEA2 /* Sansilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Sansilk.otf; path = ../../../Downloads/sansilk/Sansilk.otf; sourceTree = "<group>"; };
+		BD36EA662A8E73FC0044BEA2 /* Dufanthe.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Dufanthe.otf; path = ../../../Downloads/dufanthe/Dufanthe.otf; sourceTree = "<group>"; };
+		BD36EA682A8E74980044BEA2 /* Farmhouse Children.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Farmhouse Children.otf"; path = "../../../Downloads/farmhouse_children/Farmhouse Children.otf"; sourceTree = "<group>"; };
+		BD36EA6A2A8E75270044BEA2 /* Curlings.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Curlings.ttf; path = ../../../Downloads/Curlings.ttf; sourceTree = "<group>"; };
 		BD58F9F52A8D4F1100BB73DD /* LetterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterItem.swift; sourceTree = "<group>"; };
 		BD7177C02A8BD5FB0048B6E9 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		BD7177C22A8BD6060048B6E9 /* MyLettersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLettersView.swift; sourceTree = "<group>"; };
 		BD7177C42A8BD6100048B6E9 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		BD7177C62A8BD85D0048B6E9 /* WriteSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteSecondView.swift; sourceTree = "<group>"; };
+		BD7A6CFF2A8E77F6000263E4 /* NeverMindHandwriting-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeverMindHandwriting-Regular.ttf"; path = "../../../Downloads/nevermind_handwritting/NeverMindHandwritting/ttf/NeverMindHandwriting-Regular.ttf"; sourceTree = "<group>"; };
 		BD9142B22A8BD19D00F62896 /* ReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
 		BDAE19BC2A8D12B000BD22B7 /* LetterOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterOneView.swift; sourceTree = "<group>"; };
 		BDAE19BE2A8D12BC00BD22B7 /* LetterTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterTwoView.swift; sourceTree = "<group>"; };
 		BDAE19C02A8D150300BD22B7 /* LetterThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterThreeView.swift; sourceTree = "<group>"; };
 		BDB7867C2A8C0A7A0059397A /* WriteThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteThirdView.swift; sourceTree = "<group>"; };
+		BDC619332A8EA42900703E76 /* WrittenLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittenLetterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +111,13 @@
 		BD1367922A8AB66C004DA374 = {
 			isa = PBXGroup;
 			children = (
+				BD7A6CFF2A8E77F6000263E4 /* NeverMindHandwriting-Regular.ttf */,
+				BD36EA6A2A8E75270044BEA2 /* Curlings.ttf */,
+				BD36EA682A8E74980044BEA2 /* Farmhouse Children.otf */,
+				BD36EA662A8E73FC0044BEA2 /* Dufanthe.otf */,
+				BD36EA642A8E73A90044BEA2 /* Sansilk.otf */,
+				BD36EA602A8E73270044BEA2 /* Stefiont-Regular.otf */,
+				BD36EA5D2A8E6BD90044BEA2 /* Starla.otf */,
 				BD13679D2A8AB66C004DA374 /* withlove */,
 				BD1367AE2A8AB66D004DA374 /* withloveTests */,
 				BD1367B82A8AB66D004DA374 /* withloveUITests */,
@@ -114,6 +138,7 @@
 		BD13679D2A8AB66C004DA374 /* withlove */ = {
 			isa = PBXGroup;
 			children = (
+				BD36EA5F2A8E6BEE0044BEA2 /* Info.plist */,
 				BD13679E2A8AB66C004DA374 /* withloveApp.swift */,
 				BD1367A02A8AB66C004DA374 /* ContentView.swift */,
 				BD7177C02A8BD5FB0048B6E9 /* WriteView.swift */,
@@ -121,6 +146,7 @@
 				BDB7867C2A8C0A7A0059397A /* WriteThirdView.swift */,
 				BD7177C22A8BD6060048B6E9 /* MyLettersView.swift */,
 				BD58F9F52A8D4F1100BB73DD /* LetterItem.swift */,
+				BDC619332A8EA42900703E76 /* WrittenLetterView.swift */,
 				BD7177C42A8BD6100048B6E9 /* AboutUsView.swift */,
 				BD9142B22A8BD19D00F62896 /* ReadView.swift */,
 				BDAE19BC2A8D12B000BD22B7 /* LetterOneView.swift */,
@@ -261,8 +287,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD7A6D002A8E77F6000263E4 /* NeverMindHandwriting-Regular.ttf in Resources */,
 				BD1367A62A8AB66D004DA374 /* Preview Assets.xcassets in Resources */,
 				BD1367A32A8AB66D004DA374 /* Assets.xcassets in Resources */,
+				BD36EA672A8E73FC0044BEA2 /* Dufanthe.otf in Resources */,
+				BD36EA612A8E73270044BEA2 /* Stefiont-Regular.otf in Resources */,
+				BD36EA5E2A8E6BDA0044BEA2 /* Starla.otf in Resources */,
+				BD36EA652A8E73A90044BEA2 /* Sansilk.otf in Resources */,
+				BD36EA692A8E74980044BEA2 /* Farmhouse Children.otf in Resources */,
+				BD36EA6B2A8E75270044BEA2 /* Curlings.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +328,7 @@
 				BDAE19BF2A8D12BC00BD22B7 /* LetterTwoView.swift in Sources */,
 				BD58F9F62A8D4F1100BB73DD /* LetterItem.swift in Sources */,
 				BD9142B32A8BD19D00F62896 /* ReadView.swift in Sources */,
+				BDC619342A8EA42900703E76 /* WrittenLetterView.swift in Sources */,
 				BD7177C52A8BD6100048B6E9 /* AboutUsView.swift in Sources */,
 				BDAE19C12A8D150300BD22B7 /* LetterThreeView.swift in Sources */,
 				BD13679F2A8AB66C004DA374 /* withloveApp.swift in Sources */,
@@ -459,6 +493,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"withlove/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = withlove/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -487,6 +522,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"withlove/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = withlove/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

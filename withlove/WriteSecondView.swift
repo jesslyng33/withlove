@@ -11,142 +11,113 @@ struct WriteSecondView: View {
     @Binding var letterItems : [LetterItem]
     @Binding var index : Int
     var body: some View {
-        ZStack() {
-            if letterItems[index].color == "pink" {
-                Color(red: 0.941, green: 0.897, blue: 0.923)
-                    .ignoresSafeArea()
-            } else if letterItems[index].color == "green" {
-                Color(red: 0.816, green: 0.957, blue: 0.768)
-                    .ignoresSafeArea()
-            } else if letterItems[index].color == "blue" {
-                Color(red: 0.752, green: 0.915, blue: 0.989)
-                    .ignoresSafeArea()
-            } else if letterItems[index].color == "yellow" {
-                Color(red: 0.983, green: 0.988, blue: 0.604)
-                    .ignoresSafeArea()
-            } else if letterItems[index].color == "orange" {
-                Color(red: 1.0, green: 0.853, blue: 0.703)
-                    .ignoresSafeArea()
-            } else if letterItems[index].color == "purple" {
-                Color(red: 0.836, green: 0.831, blue: 0.896)
-                    .ignoresSafeArea()
-            }
-            NavigationStack() {
-                // navigation heart
-                HStack() {
-                    Spacer()
-                    NavigationLink(destination: ContentView()) {
-                        VStack(alignment: .center) {
-                            Image("lettericon")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.trailing, 10.0)
-                                .frame(width: 50.0)
-                            Text("Home")
-                                .padding(.trailing, 10.0)
-                        }
-                    }
+        NavigationStack() {
+            ZStack() {
+                if letterItems[index].color == "pink" {
+                    Color(red: 0.941, green: 0.897, blue: 0.923)
+                        .ignoresSafeArea()
+                } else if letterItems[index].color == "green" {
+                    Color(red: 0.816, green: 0.957, blue: 0.768)
+                        .ignoresSafeArea()
+                } else if letterItems[index].color == "blue" {
+                    Color(red: 0.752, green: 0.915, blue: 0.989)
+                        .ignoresSafeArea()
+                } else if letterItems[index].color == "yellow" {
+                    Color(red: 0.983, green: 0.988, blue: 0.604)
+                        .ignoresSafeArea()
+                } else if letterItems[index].color == "orange" {
+                    Color(red: 1.0, green: 0.853, blue: 0.703)
+                        .ignoresSafeArea()
+                } else if letterItems[index].color == "purple" {
+                    Color(red: 0.836, green: 0.831, blue: 0.896)
+                        .ignoresSafeArea()
                 }
                 VStack() {
-                    Spacer()
-                    // fonts
-                    Text("Fonts")
-                        .font(.largeTitle)
-                        .font(.system(size: 35))
+                    // main title, seen on the very top
+                    Text("customize your letter font!")
+                        .font(Font.custom("Starla", size: 40))
+                        .foregroundColor(Color(red: 0.907, green: 0.56, blue: 0.556))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
+                    Spacer();
+                    // setting the placement for images (That are letters)
                     HStack() {
+                        // letters link to WriteSecondView page
                         NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
-                            Image("lettericon")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding([.leading, .bottom, .trailing], 20)
-                                .frame(width: 110)
+                            // pink
+                            Text("ABC")
+                                .font(Font .custom("Dufanthe", size: 60))
+                                .foregroundColor(Color(hue: 1.0, saturation: 0.442, brightness: 0.329))
+                                .multilineTextAlignment(.center)
+                                .padding(.vertical, 40)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            //font = "font1"
+                            letterItems[index].font = "dufanthe"
                         })
                         NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
-                            Image("lettericon")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding([.leading, .bottom, .trailing], 20)
-                                .frame(width: 110)
+                            // green
+                            Text("ABC")
+                                .font(Font .custom("Farmhouse Children", size: 60))
+                                .foregroundColor(Color(hue: 1.0, saturation: 0.442, brightness: 0.329))
+                                .multilineTextAlignment(.center)
+                                .padding(.vertical, 40)
+                                .padding(.leading, 40)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            //font = "font2"
+                            letterItems[index].font = "farmhouse children"
                         })
                     }
                     HStack() {
                         NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
-                            Image("lettericon")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.horizontal, 20)
-                                .frame(width: 110)
+                            // blue
+                            Text("ABC")
+                                .font(Font .custom("Sansilk", size: 60))
+                                .foregroundColor(Color(hue: 1.0, saturation: 0.442, brightness: 0.329))
+                                .multilineTextAlignment(.center)
+                                .padding(.vertical, 40)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            //font = "font3"
+                            letterItems[index].font = "sansilk"
                         })
                         NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
-                            Image("lettericon")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.horizontal, 20)
-                                .frame(width: 110)
+                            // yellow
+                            Text("ABC")
+                                .font(Font .custom("Stefiont-Regular", size: 60))
+                                .foregroundColor(Color(hue: 1.0, saturation: 0.442, brightness: 0.329))
+                                .multilineTextAlignment(.center)
+                                .padding(.vertical, 40)
+                                .padding(.leading, 40)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            //font = "font4"
-                        })
-                    }
-                    // stamps
-                    Text("Stamps")
-                        .font(.largeTitle)
-                        .font(.system(size: 35))
-                        .padding(.top, 40.0)
-                    HStack() {
-                        NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
-                            Image("lettericon")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding([.leading, .bottom, .trailing], 20)
-                                .frame(width: 110)
-                        }
-                        .simultaneousGesture(TapGesture().onEnded{
-                            //stamp = "stamp1"
-                        })
-                        NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
-                            Image("lettericon")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding([.leading, .bottom, .trailing], 20)
-                                .frame(width: 110)
-                        }
-                        .simultaneousGesture(TapGesture().onEnded{
-                            //stamp = "stamp2"
+                            letterItems[index].font = "stefiont-regular"
                         })
                     }
                     HStack() {
                         NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
-                            Image("lettericon")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.horizontal, 20)
-                                .frame(width: 110)
+                            // orange
+                            Text("ABC")
+                                .font(Font .custom("Curlings", size: 60))
+                                .foregroundColor(Color(hue: 1.0, saturation: 0.442, brightness: 0.329))
+                                .multilineTextAlignment(.center)
+                                .padding(.vertical, 40)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            //stamp = "stamp3"
+                            letterItems[index].font = "curlings"
                         })
                         NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
-                            Image("lettericon")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.horizontal, 20)
-                                .frame(width: 110)
+                            // purple
+                            Text("ABC")
+                                .font(Font .custom("Starla", size: 60))
+                                .foregroundColor(Color(hue: 1.0, saturation: 0.442, brightness: 0.329))
+                                .multilineTextAlignment(.center)
+                                .padding(.vertical, 40)
+                                .padding(.leading, 40)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            //stamp = "stamp4"
+                            letterItems[index].font = "starla"
                         })
-                    }
-                    Spacer()
+                  }
+                  Spacer()
                 }
             }
         }
