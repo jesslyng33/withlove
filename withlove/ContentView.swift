@@ -84,6 +84,7 @@ struct ContentView: View {
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     Spacer()
                         .frame(height: 70)
+                    .navigationBarBackButtonHidden(true)
                 }
             }
         }

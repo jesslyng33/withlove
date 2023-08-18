@@ -48,6 +48,7 @@ struct LetterOneView: View {
                         Text("With Love, Us")
                             .foregroundColor(Color(red: 0.907, green: 0.56, blue: 0.556))
                             .font(Font.custom("Dufanthe", size: 40))
+                            .multilineTextAlignment(.center)
                         Spacer()
                     }
                 }

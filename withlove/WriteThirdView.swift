@@ -57,14 +57,15 @@ struct WriteThirdView: View {
                                 Text(prompt)
                               }
                         // for content
-                        TextEditor(text: $letterItems[index].content)/*.font(Font.custom("Sansilk", size : 30))*/
+                        TextEditor(text: $letterItems[index].content).font(Font.custom(letterItems[index].font, size : 25))
                             .frame(width: 350.0, height: 590.0, alignment: .topLeading).multilineTextAlignment(.leading).font(.title2).border(.secondary).border(Color.gray, width : 1)
                             
                         // submission button
                         NavigationLink(destination: MyLettersView(letterItems: $letterItems, index: $index)) {
-                            Text("Send to gallery")
+                            Text("send to my letters")
                             
                         }
+                        .padding(.top)
                     }
                     .textInputAutocapitalization(.never)
                     .disableAutocorrection(true)    .buttonStyle(.borderedProminent)

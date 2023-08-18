@@ -52,7 +52,7 @@ struct WriteSecondView: View {
                                 .padding(.vertical, 40)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            letterItems[index].font = "dufanthe"
+                            letterItems[index].font = "Dufanthe"
                         })
                         NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
                             // green
@@ -64,7 +64,7 @@ struct WriteSecondView: View {
                                 .padding(.leading, 40)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            letterItems[index].font = "farmhouse children"
+                            letterItems[index].font = "Farmhouse Children"
                         })
                     }
                     HStack() {
@@ -77,7 +77,7 @@ struct WriteSecondView: View {
                                 .padding(.vertical, 40)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            letterItems[index].font = "sansilk"
+                            letterItems[index].font = "Sansilk"
                         })
                         NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
                             // yellow
@@ -89,20 +89,20 @@ struct WriteSecondView: View {
                                 .padding(.leading, 40)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            letterItems[index].font = "stefiont-regular"
+                            letterItems[index].font = "Stefiont-Regular"
                         })
                     }
                     HStack() {
                         NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
                             // orange
                             Text("ABC")
-                                .font(Font .custom("Curlings", size: 60))
+                                .font(Font .custom("NeverMindHandwriting-Regular", size: 60))
                                 .foregroundColor(Color(hue: 1.0, saturation: 0.442, brightness: 0.329))
                                 .multilineTextAlignment(.center)
                                 .padding(.vertical, 40)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            letterItems[index].font = "curlings"
+                            letterItems[index].font = "NeverMindHandwriting-Regular"
                         })
                         NavigationLink(destination: WriteThirdView(letterItems: $letterItems, index: $index)) {
                             // purple
@@ -114,7 +114,7 @@ struct WriteSecondView: View {
                                 .padding(.leading, 40)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            letterItems[index].font = "starla"
+                            letterItems[index].font = "Starla"
                         })
                   }
                   Spacer()

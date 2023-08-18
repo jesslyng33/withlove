@@ -32,7 +32,7 @@ struct AboutUsView: View {
                 }
                 VStack {
                     // feel free to change the title of the page
-                    Text("meet the with love team")
+                    Text("💌 with love, the team 💌")
                         .font(Font.custom("Starla", size: 30))
                         .foregroundColor(Color(red: 0.907, green: 0.56, blue: 0.556))
                         .multilineTextAlignment(.center)
@@ -63,8 +63,8 @@ struct AboutUsView: View {
                     }
                     Spacer()
                         .padding(.all)
+                    .navigationBarBackButtonHidden(true)
                     //this will be where we enter the big ass paragraph about the inspo and other team related info will pop up under the button
-           
             }
         Spacer()
             }

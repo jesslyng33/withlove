@@ -46,17 +46,33 @@ struct ReadView: View {
                             Image("pinkletter")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fill)
-                            .padding(.all)}
+                            .padding([.top, .leading, .trailing])}
+                        Text("open when you need to make a big decision")
+                            .font(Font.custom("Starla", size: 25))
+                            .foregroundColor(Color(red: 0.907, green: 0.56, blue: 0.556))
+                            .multilineTextAlignment(.center)
+                            .padding([.leading, .bottom, .trailing], 20.0)
                         NavigationLink(destination: LetterTwoView()) {
                             Image("pinkletter")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fill)
-                            .padding(.all)}
+                            .padding([.top, .leading, .trailing])}
+                        Text("open when you need a burst of happiness")
+                            .font(Font.custom("Starla", size: 25))
+                            .foregroundColor(Color(red: 0.907, green: 0.56, blue: 0.556))
+                            .multilineTextAlignment(.center)
+                            .padding([.leading, .bottom, .trailing], 20.0)
                         NavigationLink(destination: LetterThreeView()) {
                             Image("pinkletter")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fill)
-                            .padding(.all)}
+                            .padding([.top, .leading, .trailing])}
+                        Text("open when you're facing burnout")
+                            .font(Font.custom("Starla", size: 25))
+                            .foregroundColor(Color(red: 0.907, green: 0.56, blue: 0.556))
+                            .multilineTextAlignment(.center)
+                            .padding([.leading, .bottom, .trailing], 20.0)
+                        .navigationBarBackButtonHidden(true)
                     }
                 }
             }

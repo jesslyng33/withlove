@@ -115,6 +115,7 @@ struct WriteView: View {
                         .simultaneousGesture(TapGesture().onEnded{
                             letterItems[index].color = "purple"
                         })
+                        .navigationBarBackButtonHidden(true)
                   }
                   Spacer()
                 }
