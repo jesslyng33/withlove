@@ -37,36 +37,38 @@ struct AboutUsView: View {
                         .foregroundColor(Color(red: 0.907, green: 0.56, blue: 0.556))
                         .multilineTextAlignment(.center)
                     //Vstack for all of our pictures and name caption
-                    HStack {
-                        VStack {
-                            Image("Image")
+                            Image("jesslyn")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .padding(.all)
-                            Text("Jesslyn")
+                        Text("Jesslyn").font(Font.custom("Dufanthe", size: 50))
+                        .foregroundColor(Color(hue: 0.002, saturation: 0.419, brightness: 0.771))
                         }
-                        Image("Image")
+                        Image("christine")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                             .padding(.all)
                         Text("Christine")
-                        Image("Image")
+                    .font(Font.custom("Dufanthe", size: 50))
+                    .foregroundColor(Color(hue: 0.002, saturation: 0.419, brightness: 0.771))
+                
+                        Image("jianna")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                         .padding(.all)
+                
                         Text("Jianna")
+                    .font(Font.custom("Dufanthe", size: 50))
+                    .foregroundColor(Color(hue: 0.002, saturation: 0.419, brightness: 0.771))
                     }
                     Spacer()
                         .padding(.all)
                     //this will be where we enter the big ass paragraph about the inspo and other team related info will pop up under the button
-                    Text("BIG LONG PARGPRH HEHEHEHEBEHEHFDBJDCXKSLNCJNC DSNECK NSCK NSCHBNHJNBJDCJKXDSHKKNILDKNHIVKSNJD")
+           
             }
-                Spacer()
+        Spacer()
             }
         }
-    }
-}
-
 struct AboutUsView_Previews: PreviewProvider {
     static var previews: some View {
         AboutUsView()

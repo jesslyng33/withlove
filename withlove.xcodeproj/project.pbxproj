@@ -20,6 +20,12 @@
 		BD36EA672A8E73FC0044BEA2 /* Dufanthe.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD36EA662A8E73FC0044BEA2 /* Dufanthe.otf */; };
 		BD36EA692A8E74980044BEA2 /* Farmhouse Children.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD36EA682A8E74980044BEA2 /* Farmhouse Children.otf */; };
 		BD36EA6B2A8E75270044BEA2 /* Curlings.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD36EA6A2A8E75270044BEA2 /* Curlings.ttf */; };
+		BD55B5F82A8F9DEA0061C26B /* dufanthe in Resources */ = {isa = PBXBuildFile; fileRef = BD55B5F72A8F9DEA0061C26B /* dufanthe */; };
+		BD55B5FA2A8F9DF50061C26B /* farmhouse_children in Resources */ = {isa = PBXBuildFile; fileRef = BD55B5F92A8F9DF50061C26B /* farmhouse_children */; };
+		BD55B5FC2A8F9E060061C26B /* nevermind_handwritting in Resources */ = {isa = PBXBuildFile; fileRef = BD55B5FB2A8F9E060061C26B /* nevermind_handwritting */; };
+		BD55B5FE2A8F9E130061C26B /* sansilk in Resources */ = {isa = PBXBuildFile; fileRef = BD55B5FD2A8F9E130061C26B /* sansilk */; };
+		BD55B6002A8F9E1E0061C26B /* starla in Resources */ = {isa = PBXBuildFile; fileRef = BD55B5FF2A8F9E1E0061C26B /* starla */; };
+		BD55B6022A8F9E2A0061C26B /* stefiont in Resources */ = {isa = PBXBuildFile; fileRef = BD55B6012A8F9E2A0061C26B /* stefiont */; };
 		BD58F9F62A8D4F1100BB73DD /* LetterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58F9F52A8D4F1100BB73DD /* LetterItem.swift */; };
 		BD7177C12A8BD5FB0048B6E9 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7177C02A8BD5FB0048B6E9 /* WriteView.swift */; };
 		BD7177C32A8BD6060048B6E9 /* MyLettersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7177C22A8BD6060048B6E9 /* MyLettersView.swift */; };
@@ -69,6 +75,12 @@
 		BD36EA662A8E73FC0044BEA2 /* Dufanthe.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Dufanthe.otf; path = ../../../Downloads/dufanthe/Dufanthe.otf; sourceTree = "<group>"; };
 		BD36EA682A8E74980044BEA2 /* Farmhouse Children.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Farmhouse Children.otf"; path = "../../../Downloads/farmhouse_children/Farmhouse Children.otf"; sourceTree = "<group>"; };
 		BD36EA6A2A8E75270044BEA2 /* Curlings.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Curlings.ttf; path = ../../../Downloads/Curlings.ttf; sourceTree = "<group>"; };
+		BD55B5F72A8F9DEA0061C26B /* dufanthe */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dufanthe; path = ../../../../Downloads/dufanthe; sourceTree = "<group>"; };
+		BD55B5F92A8F9DF50061C26B /* farmhouse_children */ = {isa = PBXFileReference; lastKnownFileType = folder; name = farmhouse_children; path = ../../../../Downloads/farmhouse_children; sourceTree = "<group>"; };
+		BD55B5FB2A8F9E060061C26B /* nevermind_handwritting */ = {isa = PBXFileReference; lastKnownFileType = folder; name = nevermind_handwritting; path = ../../../../Downloads/nevermind_handwritting; sourceTree = "<group>"; };
+		BD55B5FD2A8F9E130061C26B /* sansilk */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sansilk; path = ../../../../Downloads/sansilk; sourceTree = "<group>"; };
+		BD55B5FF2A8F9E1E0061C26B /* starla */ = {isa = PBXFileReference; lastKnownFileType = folder; name = starla; path = ../../../../Downloads/starla; sourceTree = "<group>"; };
+		BD55B6012A8F9E2A0061C26B /* stefiont */ = {isa = PBXFileReference; lastKnownFileType = folder; name = stefiont; path = ../../../../Downloads/stefiont; sourceTree = "<group>"; };
 		BD58F9F52A8D4F1100BB73DD /* LetterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterItem.swift; sourceTree = "<group>"; };
 		BD7177C02A8BD5FB0048B6E9 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		BD7177C22A8BD6060048B6E9 /* MyLettersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLettersView.swift; sourceTree = "<group>"; };
@@ -138,6 +150,12 @@
 		BD13679D2A8AB66C004DA374 /* withlove */ = {
 			isa = PBXGroup;
 			children = (
+				BD55B6012A8F9E2A0061C26B /* stefiont */,
+				BD55B5FF2A8F9E1E0061C26B /* starla */,
+				BD55B5FD2A8F9E130061C26B /* sansilk */,
+				BD55B5FB2A8F9E060061C26B /* nevermind_handwritting */,
+				BD55B5F92A8F9DF50061C26B /* farmhouse_children */,
+				BD55B5F72A8F9DEA0061C26B /* dufanthe */,
 				BD36EA5F2A8E6BEE0044BEA2 /* Info.plist */,
 				BD13679E2A8AB66C004DA374 /* withloveApp.swift */,
 				BD1367A02A8AB66C004DA374 /* ContentView.swift */,
@@ -291,11 +309,17 @@
 				BD1367A62A8AB66D004DA374 /* Preview Assets.xcassets in Resources */,
 				BD1367A32A8AB66D004DA374 /* Assets.xcassets in Resources */,
 				BD36EA672A8E73FC0044BEA2 /* Dufanthe.otf in Resources */,
+				BD55B5FC2A8F9E060061C26B /* nevermind_handwritting in Resources */,
+				BD55B6002A8F9E1E0061C26B /* starla in Resources */,
+				BD55B5FA2A8F9DF50061C26B /* farmhouse_children in Resources */,
 				BD36EA612A8E73270044BEA2 /* Stefiont-Regular.otf in Resources */,
+				BD55B5FE2A8F9E130061C26B /* sansilk in Resources */,
 				BD36EA5E2A8E6BDA0044BEA2 /* Starla.otf in Resources */,
 				BD36EA652A8E73A90044BEA2 /* Sansilk.otf in Resources */,
 				BD36EA692A8E74980044BEA2 /* Farmhouse Children.otf in Resources */,
 				BD36EA6B2A8E75270044BEA2 /* Curlings.ttf in Resources */,
+				BD55B6022A8F9E2A0061C26B /* stefiont in Resources */,
+				BD55B5F82A8F9DEA0061C26B /* dufanthe in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

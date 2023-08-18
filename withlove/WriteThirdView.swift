@@ -57,19 +57,21 @@ struct WriteThirdView: View {
                                 Text(prompt)
                               }
                         // for content
-                        TextEditor(text: $letterItems[index].content)
+                        TextEditor(text: $letterItems[index].content)/*.font(Font.custom("Sansilk", size : 30))*/
                             .frame(width: 350.0, height: 590.0, alignment: .topLeading).multilineTextAlignment(.leading).font(.title2).border(.secondary).border(Color.gray, width : 1)
+                            
                         // submission button
                         NavigationLink(destination: MyLettersView(letterItems: $letterItems, index: $index)) {
                             Text("Send to gallery")
+                            
                         }
                     }
                     .textInputAutocapitalization(.never)
-                    .disableAutocorrection(true)
+                    .disableAutocorrection(true)    .buttonStyle(.borderedProminent)
+                                                     .accentColor(Color(red: 0.907, green: 0.56, blue: 0.556))
+                                                     .fontWeight(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
                 }
-                .buttonStyle(.borderedProminent)
-                .accentColor(Color(red: 0.907, green: 0.56, blue: 0.556))
-                .fontWeight(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
+            
             }
         }
     }
